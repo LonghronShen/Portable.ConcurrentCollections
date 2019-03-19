@@ -718,7 +718,7 @@ namespace System.Collections.Concurrent
                 // check and this check, another item could have arrived).
                 if (head._nextSegment == null)
                 {
-                    item = default;
+                    item = default(T);
                     return false;
                 }
 
@@ -812,7 +812,7 @@ namespace System.Collections.Concurrent
                 // and we'll traverse to that segment.
             }
 
-            result = default;
+            result = default(T);
             return false;
         }
 
