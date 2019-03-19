@@ -1,14 +1,14 @@
 ﻿<Project Sdk="MSBuild.Sdk.Extras">
 
   <PropertyGroup>
-    <Description>This is a .NET Standard 1.0, Silverlight 5.0 and Windows Phone Silverlight 8.0 &amp; 8.1 backport from System.Collections.Concurrent.ConcurrentDictionary as defined in .NET Core</Description>
+    <Description>This is a .NET Standard 1.0, Silverlight 5.0 and Windows Phone Silverlight 8.0 &amp; 8.1 backport from System.Collections.Concurrent.ConcurrentDictionary and System.Collections.Concurrent.ConcurrentQueue as defined in .NET Core</Description>
     <AssemblyTitle>Portable.ConcurrentCollections</AssemblyTitle>
     <VersionPrefix>1.0.4</VersionPrefix>
-    <Authors>Stef Heyenrath</Authors>
+    <Authors>Stef Heyenrath;LonghronShen</Authors>
     <TargetFrameworks>netstandard1.0;net20;net35;portable-net45+win8+wpa81;portable-net4+sl50+win8+wpa81+wp8</TargetFrameworks>
     <AssemblyName>Portable.ConcurrentCollections</AssemblyName>
     <PackageId>Portable.ConcurrentCollections</PackageId>
-    <PackageTags>Dictionary;ConcurrentDictionary;Collections;System.Collections.Concurrent</PackageTags>
+    <PackageTags>Dictionary;ConcurrentDictionary;ConcurrentQueue;Collections;System.Collections.Concurrent</PackageTags>
     <PackageReleaseNotes>Strong name this library.</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/LonghronShen/Portable.ConcurrentCollections</PackageProjectUrl>
     <PackageLicenseUrl>https://raw.githubusercontent.com/LonghronShen/Portable.ConcurrentCollections/master/LICENSE</PackageLicenseUrl>
