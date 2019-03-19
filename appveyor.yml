@@ -19,11 +19,11 @@ environment:
   PATH: $(PATH);$(PROGRAMFILES)\dotnet\
 
 build_script:
-- appveyor-retry msbuild Portable.ConcurrentDictionary.sln /t:restore
-- msbuild Portable.ConcurrentDictionary.sln /p:Configuration=%CONFIGURATION% /p:VersionSuffix=%LABEL%
+- appveyor-retry msbuild Portable.ConcurrentCollections.sln /t:restore
+- msbuild Portable.ConcurrentCollections.sln /p:Configuration=%CONFIGURATION% /p:VersionSuffix=%LABEL%
 
 test_script:
-- dotnet test test\Portable.ConcurrentDictionary.Tests\
+- dotnet test test\Portable.ConcurrentCollections.Tests\
 
 artifacts:
 - path: '**\*.nupkg'

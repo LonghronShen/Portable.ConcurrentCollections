@@ -10,10 +10,10 @@
     <PackageId>Portable.ConcurrentCollections</PackageId>
     <PackageTags>Dictionary;ConcurrentDictionary;Collections;System.Collections.Concurrent</PackageTags>
     <PackageReleaseNotes>Strong name this library.</PackageReleaseNotes>
-    <PackageProjectUrl>https://github.com/StefH/Portable.ConcurrentCollections</PackageProjectUrl>
-    <PackageLicenseUrl>https://raw.githubusercontent.com/StefH/Portable.ConcurrentCollections/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/LonghronShen/Portable.ConcurrentCollections</PackageProjectUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/LonghronShen/Portable.ConcurrentCollections/master/LICENSE</PackageLicenseUrl>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/StefH/Portable.ConcurrentCollections</RepositoryUrl>
+    <RepositoryUrl>https://github.com/LonghronShen/Portable.ConcurrentCollections</RepositoryUrl>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
     <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
