@@ -1,0 +1,44 @@
+﻿<Project Sdk="MSBuild.Sdk.Extras">
+
+  <PropertyGroup>
+    <Description>This is a .NET Standard 1.0, Silverlight 5.0 and Windows Phone Silverlight 8.0 &amp; 8.1 backport from System.Collections.Concurrent.ConcurrentDictionary as defined in .NET Core</Description>
+    <AssemblyTitle>Portable.ConcurrentCollections</AssemblyTitle>
+    <VersionPrefix>1.0.4</VersionPrefix>
+    <Authors>Stef Heyenrath</Authors>
+    <TargetFrameworks>netstandard1.0;net20;net35;portable-net45+win8+wpa81;portable-net4+sl50+win8+wpa81+wp8</TargetFrameworks>
+    <AssemblyName>Portable.ConcurrentCollections</AssemblyName>
+    <PackageId>Portable.ConcurrentCollections</PackageId>
+    <PackageTags>Dictionary;ConcurrentDictionary;Collections;System.Collections.Concurrent</PackageTags>
+    <PackageReleaseNotes>Strong name this library.</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/StefH/Portable.ConcurrentCollections</PackageProjectUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/StefH/Portable.ConcurrentCollections/master/LICENSE</PackageLicenseUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/StefH/Portable.ConcurrentCollections</RepositoryUrl>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'portable-net45+win8+wpa81' ">
+    <DefineConstants>$(DefineConstants);PORTABLE;PROFILE111</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'portable-net4+sl50+win8+wpa81+wp8' ">
+    <DefineConstants>$(DefineConstants);PORTABLE;PROFILE328</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'portable-net4+sl50+win8+wpa81+wp8' ">
+    <PackageReference Include="Microsoft.Net.Http" Version="2.2.29" />
+    <PackageReference Include="Microsoft.Bcl.Async" Version="1.0.168" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.0' OR '$(TargetFramework)' == 'portable-net45+win8+wpa81' ">
+    <PackageReference Include="System.Threading" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>
