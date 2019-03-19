@@ -1,4 +1,4 @@
-# Portable.ConcurrentDictionary
+# Portable.ConcurrentCollections
 
 [![Build status](https://ci.appveyor.com/api/projects/status/2auqvkcuy2yw5po5?svg=true)](https://ci.appveyor.com/project/LonghronShen/portable-concurrentcollections)
 
